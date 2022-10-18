@@ -202,3 +202,66 @@ function Obtenercuadrado(){
     areaResultado.innerHTML = "" + area;
     volumenResultado.innerHTML = "" + volumen;
   }
+  function Obtenertroncocono(){
+    var areaResultado = document.getElementById("areaResultado");
+    var volumenResultado = document.getElementById("volumenResultado");
+    var g = parseInt(document.getElementById("generatriz").value);
+    var h = parseInt(document.getElementById("altura").value);
+    var R = parseInt(document.getElementById("radioma").value);
+    var r = parseInt(document.getElementById("radiome").value);
+  
+    var area = (Math.PI*(g*(r+R)+r**2+R**2));
+    var volumen = (Math.PI*(R**2+r**2+R*r))/3;
+  
+    areaResultado.innerHTML = "" + area;
+    volumenResultado.innerHTML = "" + volumen;
+  }
+  function Obteneresfera(){
+    var areaResultado = document.getElementById("areaResultado");
+    var R = parseInt(document.getElementById("radio").value);
+  
+    var area = (4*Math.PI*R**2);
+    var volumen = (4*Math.PI*R**3)/3;
+  
+    areaResultado.innerHTML = "" + area;
+    volumenResultado.innerHTML = "" + volumen;
+  }
+  function Obtenerpiramide(){
+    var areaResultado = document.getElementById("areaResultado");
+    var volumenResultado = document.getElementById("volumenResultado");
+    var a = parseInt(document.getElementById("ladoa").value);
+    var a2 = parseInt(document.getElementById("ladoa2").value);
+    var h = parseInt(document.getElementById("altura").value);
+    var A = parseInt(document.getElementById("area").value);
+    var P = parseInt(document.getElementById("perimetro").value);
+  
+    var area = (P*(a+a2))/2;
+    var volumen = (A*h)/3;
+  
+    areaResultado.innerHTML = "" + area;
+    volumenResultado.innerHTML = "" + volumen;
+  }
+  function Obtenertatraedro(){
+    var areaResultado = document.getElementById("areaResultado");
+    var volumenResultado = document.getElementById("volumenResultado");
+    var la = parseInt(document.getElementById("ladoa").value);
+    
+  
+    var area = (Math.sqrt(3)*la**2);
+    var volumen=(Math.sqrt(2)*la**3)/2;
+  
+    areaResultado.innerHTML = "" + area;
+    volumenResultado.innerHTML = "" + volumen;
+  }
+  function Obteneroctaedro(){
+    var areaResultado = document.getElementById("areaResultado");
+    var volumenResultado = document.getElementById("volumenResultado");
+    var la = parseInt(document.getElementById("ladoa").value);
+    
+  
+    var area = (2*Math.sqrt(3)*la**2);
+    var volumen=(Math.sqrt(2)*la**2)/2;
+  
+    areaResultado.innerHTML = "" + area;
+    volumenResultado.innerHTML = "" + volumen;
+  }
